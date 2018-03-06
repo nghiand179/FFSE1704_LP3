@@ -1,2 +1,5 @@
-# FFSE1704_LP3
-FFSE1704's Assignments Repository
+# SINHVD Assigment Directory
+
+### Assignment List
+
+1. Assigment 0: [Hello World](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/SinhVD/helloworl.html)
