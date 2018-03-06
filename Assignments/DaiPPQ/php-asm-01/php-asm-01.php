@@ -168,7 +168,7 @@
 	}
 ?>
 
-<h1>Giải phương trình bật nhất, 1 ẩn số</h1>
+<h1>Giải phương trình bậc nhất, 1 ẩn số</h1>
 <table border="1px" cellpadding="5px" cellspacing="0px" style="width:50%;">
 	<tr bgcolor = #d6d6d6>
 		<th style="text-align: center;">TT</th>

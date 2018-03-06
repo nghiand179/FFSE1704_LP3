@@ -378,7 +378,7 @@
 	}
 ?>
 
-<h1>Giải phương trình bật hai(có dạng ax2 + bx + c =0 𝑣ớ𝑖 a ≠ 0)</h1>
+<h1>Giải phương trình bậc hai(có dạng ax2 + bx + c =0 𝑣ớ𝑖 a ≠ 0)</h1>
 <table border="1px" cellpadding="5px" cellspacing="0px" style="width:50%;">
 	<tr bgcolor = #d6d6d6>
 		<th style="text-align: center;">TT</th>
