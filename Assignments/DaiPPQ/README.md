@@ -6,4 +6,4 @@
 <br>
 2. Assigment 1 
       [Phương trình bậc 1](https://github.com/FASTTRACKSE/FFSE1704_LP3/blob/master/Assignments/DaiPPQ/php-asm-01/php-asm-01.php)
-      [Phương trình bậc 2](http://localhost/FFSE1704_LP3/Assignments/DaiPPQ/php-asm-01/php-asm-01b.php)
+      [Phương trình bậc 2](hFFSE1704_LP3 / Các bài tập / DaiPPQ / php-asm-01 /php-asm-01b.php)
