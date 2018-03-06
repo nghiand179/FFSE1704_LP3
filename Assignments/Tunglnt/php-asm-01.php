@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>php-asm-01b.php</title>
+	<title>php-asm-01.php</title>
 	<style type="text/css">
 		th { text-align: center; width: 50px; };
 		td {  width: 50px; }
