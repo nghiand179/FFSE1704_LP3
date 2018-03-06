@@ -388,6 +388,7 @@
 		<th style="text-align: right;">x1</th>
 		<th style="text-align: right;">x2</th>
 		<th style="text-align: center;">Ghi chú</th>
+		<th style="text-align: center;">Action</th>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt1?></th>
@@ -397,6 +398,7 @@
 		<th style="text-align: right;"><?=$x11?></th>
 		<th style="text-align: right;"><?=$x12?></th>
 		<th style="text-align: left;"><?=$ghi_chu1?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt2?></th>
@@ -406,6 +408,7 @@
 		<th style="text-align: right;"><?=$x21?></th>
 		<th style="text-align: right;"><?=$x22?></th>
 		<th style="text-align: left;"><?=$ghi_chu2?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt3?></th>
@@ -415,6 +418,7 @@
 		<th style="text-align: right;"><?=$x31?></th>
 		<th style="text-align: right;"><?=$x32?></th>
 		<th style="text-align: left;"><?=$ghi_chu3?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt4?></th>
@@ -424,6 +428,7 @@
 		<th style="text-align: right;"><?=$x41?></th>
 		<th style="text-align: right;"><?=$x42?></th>
 		<th style="text-align: left;"><?=$ghi_chu4?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt5?></th>
@@ -433,6 +438,7 @@
 		<th style="text-align: right;"><?=$x51?></th>
 		<th style="text-align: right;"><?=$x52?></th>
 		<th style="text-align: left;"><?=$ghi_chu5?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt6?></th>
@@ -442,6 +448,7 @@
 		<th style="text-align: right;"><?=$x61?></th>
 		<th style="text-align: right;"><?=$x62?></th>
 		<th style="text-align: left;"><?=$ghi_chu6?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt7?></th>
@@ -451,6 +458,7 @@
 		<th style="text-align: right;"><?=$x71?></th>
 		<th style="text-align: right;"><?=$x72?></th>
 		<th style="text-align: left;"><?=$ghi_chu7?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt8?></th>
@@ -460,6 +468,7 @@
 		<th style="text-align: right;"><?=$x81?></th>
 		<th style="text-align: right;"><?=$x82?></th>
 		<th style="text-align: left;"><?=$ghi_chu8?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt9?></th>
@@ -469,6 +478,7 @@
 		<th style="text-align: right;"><?=$x91?></th>
 		<th style="text-align: right;"><?=$x92?></th>
 		<th style="text-align: left;"><?=$ghi_chu9?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 	<tr>
 		<th style="text-align: center;"><?=$tt10?></th>
@@ -478,5 +488,17 @@
 		<th style="text-align: right;"><?=$x101?></th>
 		<th style="text-align: right;"><?=$x102?></th>
 		<th style="text-align: left;"><?=$ghi_chu10?></th>
+		<td style="text-align: left;"><a href="#"  class="delete">Xóa</a></td>
 	</tr>
 </table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>	
+	$('.delete').click(function(){
+		
+		var cf=  confirm("Bạn có muốn xóa dòng này hay không!");
+		if(cf==true){
+			$(this).parent().parent().remove();
+		}
+	
+	})
+</script>
