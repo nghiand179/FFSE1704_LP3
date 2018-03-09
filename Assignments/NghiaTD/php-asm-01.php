@@ -170,7 +170,7 @@ if($a9==0){
 
 ?>	
 <h1>Giải phương trình bâc nhất 1 ẩn số	</h1>
-	<table border="1px" width="900px" border-collapse= "collapse">
+	<table border="1px" width="900px" border-collapse= "collapse";>
 		<tr>
 			<th>TT</th>
 			<th>a</th>
