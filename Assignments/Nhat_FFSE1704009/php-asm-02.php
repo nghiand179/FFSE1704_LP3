@@ -9,33 +9,33 @@
 	$Lop10A1 = array(
 		array(
 			'name' => "Trần Nguyễn Nhật Nam",
-			'D_toan' => 9,
-			'D_ly' => 8.5,
-			'D_hoa' => 8.9,
+			'toan' => 9,
+			'ly' => 8.5,
+			'hoa' => 8.9,
 		),
 		array(
 			'name' => "Bùi Ngọc Quỳnh Nhi",
-			'D_toan' => 7,
-			'D_ly' => 8.8,
-			'D_hoa' => 7.8,
+			'toan' => 7,
+			'ly' => 8.8,
+			'hoa' => 7.8,
 		),
 		array(
 			'name' => "Nguyễn Hoàng Thanh Mai",
-			'D_toan' => 8.5,
-			'D_ly' => 9.2,
-			'D_hoa' => 7.5,
+			'toan' => 8.5,
+			'ly' => 9.2,
+			'hoa' => 7.5,
 		),
 		array(
 			'name' => "Trần Thị Thu Minh",
-			'D_toan' => 6.5,
-			'D_ly' => 6,
-			'D_hoa' => 7,
+			'toan' => 6.5,
+			'ly' => 6,
+			'hoa' => 7,
 		),
 		array(
 			'name' => "Nguyễn Thị Nguyên Thảo",
-			'D_toan' => 4,
-			'D_ly' => 4.1,
-			'D_hoa' => 3.2,
+			'toan' => 4,
+			'ly' => 4.1,
+			'hoa' => 3.2,
 		)
 	);
 ?>
@@ -54,7 +54,7 @@
 
 	<?php
 		foreach ($Lop10A1 as $k => $v) {
-			$diem = round(($v['D_toan'] + $v['D_ly'] + $v['D_hoa'])/3, 2);
+			$diem = round(($v['toan'] + $v['ly'] + $v['hoa'])/3, 2);
 			$style = "";
 			if ($diem < 5) {
 				$xeploai = "Loại yếu";
@@ -74,9 +74,9 @@
 			echo "<tr $style>";
 			echo "<td style='text-align: center;'>$k</td>";
 			echo "<td style='text-align: left;'>$v[name]</td>";
-			echo "<td style='text-align: right;'>$v[D_toan]</td>";
-			echo "<td style='text-align: right;'>$v[D_ly]</td>";
-			echo "<td style='text-align: right;'>$v[D_hoa]</td>";
+			echo "<td style='text-align: right;'>$v[toan]</td>";
+			echo "<td style='text-align: right;'>$v[ly]</td>";
+			echo "<td style='text-align: right;'>$v[hoa]</td>";
 			echo "<td style='text-align: right;'>$diem</td>";		
 			echo "<td style='text-align: center;'>$xeploai</td>";
 			echo "</tr>";
@@ -98,9 +98,9 @@
 
 	<?php
 		for ($i=0; $i < count($Lop10A1); $i++) { 
-			$diem1 = round(($Lop10A1[$i]['D_toan'] + $Lop10A1[$i]['D_ly'] + $Lop10A1[$i]['D_hoa'])/3, 2);
+			$diem1 = round(($Lop10A1[$i]['toan'] + $Lop10A1[$i]['ly'] + $Lop10A1[$i]['hoa'])/3, 2);
 			for ($j= $i + 1; $j < count($Lop10A1); $j++) { 
-				$diem2 = round(($Lop10A1[$j]['D_toan'] + $Lop10A1[$j]['D_ly'] + $Lop10A1[$j]['D_hoa'])/3, 2);
+				$diem2 = round(($Lop10A1[$j]['toan'] + $Lop10A1[$j]['ly'] + $Lop10A1[$j]['hoa'])/3, 2);
 				if ($diem1 < $diem2) {
 					$luu = $Lop10A1[$i];
 					$Lop10A1[$i] = $Lop10A1[$j];
@@ -110,7 +110,7 @@
 		}
 
 		foreach ($Lop10A1 as $k => $v) {
-			$diem = round(($v['D_toan'] + $v['D_ly'] + $v['D_hoa'])/3, 2);
+			$diem = round(($v['toan'] + $v['ly'] + $v['hoa'])/3, 2);
 			$style = "";
 			if ($diem < 5) {
 				$xeploai = "Loại yếu";
@@ -130,9 +130,9 @@
 			echo "<tr $style>";
 			echo "<td style='text-align: center;'>$k</td>";
 			echo "<td style='text-align: left;'>$v[name]</td>";
-			echo "<td style='text-align: right;'>$v[D_toan]</td>";
-			echo "<td style='text-align: right;'>$v[D_ly]</td>";
-			echo "<td style='text-align: right;'>$v[D_hoa]</td>";
+			echo "<td style='text-align: right;'>$v[toan]</td>";
+			echo "<td style='text-align: right;'>$v[ly]</td>";
+			echo "<td style='text-align: right;'>$v[hoa]</td>";
 			echo "<td style='text-align: right;'>$diem</td>";		
 			echo "<td style='text-align: center;'>$xeploai</td>";
 			echo "</tr>";
@@ -144,7 +144,7 @@
 	$max = 0;
 	$ten = "";
 	for ($i=0; $i < count($Lop10A1); $i++) { 
-		$diem = round(($Lop10A1[$i]['D_toan'] + $Lop10A1[$i]['D_ly'] + $Lop10A1[$i]['D_hoa'])/3, 2);
+		$diem = round(($Lop10A1[$i]['toan'] + $Lop10A1[$i]['ly'] + $Lop10A1[$i]['hoa'])/3, 2);
 		if ($diem > $max) {
 			$max = $diem;
 			$ten = $Lop10A1[$i]['name'];
