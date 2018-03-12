@@ -88,7 +88,7 @@ if($a5 != 0){
 
 <?php
 $t6=6;
-$a6=2;
+$a6=0;
 $b6=3;
 if($a6 != 0){
     $x6=-$b6/$a6;
@@ -195,65 +195,60 @@ if($a10 != 0){
              <td style="text-align: left;"><p><?=$y2?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">3</td>
+            <td style="text-align: center;"><?=$t3?></td>
              <td style="text-align: right;"><p><?=$a3?></p></td>
              <td style="text-align: right;"><p><?=$b3?></p></td>
              <td style="text-align: right;"><p><?=$x3?></p></td>
              <td style="text-align: left;"><p><?=$y3?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">4</td>
+            <td style="text-align: center;"><?=$t4?></td>
              <td style="text-align: right;"><p><?=$a4?></p></td>
              <td style="text-align: right;"><p><?=$b4?></p></td>
              <td style="text-align: right;"><p><?=$x4?></p></td>
              <td style="text-align: left;"><p><?=$y4?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">5</td>
+            <td style="text-align: center;"><?=$t5?></td>
              <td style="text-align: right;"><p><?=$a5?></p></td>
              <td style="text-align: right;"><p><?=$b5?></p></td>
              <td style="text-align: right;"><p><?=$x5?></p></td>
              <td style="text-align: left;"><p><?=$y5?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">6</td>
+            <td style="text-align: center;"><?=$t6?></td>
              <td style="text-align: right;"><p><?=$a6?></p></td>
              <td style="text-align: right;"><p><?=$b6?></p></td>
              <td style="text-align: right;"><p><?=$x6?></p></td>
              <td style="text-align: left;"><p><?=$y6?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">7</td>
+            <td style="text-align: center;"><?=$t7?></td>
              <td style="text-align: right;"><p><?=$a7?></p></td>
              <td style="text-align: right;"><p><?=$b7?></p></td>
              <td style="text-align: right;"><p><?=$x7?></p></td>
              <td style="text-align: left;"><p><?=$y7?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">8</td>
+            <td style="text-align: center;"><?=$t8?></td>
              <td style="text-align: right;"><p><?=$a8?></p></td>
              <td style="text-align: right;"><p><?=$b8?></p></td>
              <td style="text-align: right;"><p><?=$x8?></p></td>
              <td style="text-align: left;"><p><?=$y8?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">9</td>
+            <td style="text-align: center;"><?=$t9?></td>
              <td style="text-align: right;"><p><?=$a9?></p></td>
              <td style="text-align: right;"><p><?=$b9?></p></td>
              <td style="text-align: right;"><p><?=$x9?></p></td>
              <td style="text-align: left;"><p><?=$y9?></p></td>
         </tr>
         <tr>
-            <td style="text-align: center;">10</td>
+            <td style="text-align: center;"><?=$t10?></td>
              <td style="text-align: right;"><p><?=$a10?></p></td>
              <td style="text-align: right;"><p><?=$b10?></p></td>
              <td style="text-align: right;"><p><?=$x10?></p></td>
              <td style="text-align: left;"><p><?=$y10?></p></td>
         </tr>
-        <?php
-    if($a1==0 && $a2==0){
-        
-    }
-        ?>
     </table>
 </body>
