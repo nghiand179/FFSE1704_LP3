@@ -6,7 +6,7 @@
 </head>
 <body>
 	<?php
-		$a = 10;
+		$a = 11;
 		$tong = 0;
 		echo "Danh sách các ước số của a là: <br>";
 		for ($uc=1; $uc<=$a; $uc++) { 
