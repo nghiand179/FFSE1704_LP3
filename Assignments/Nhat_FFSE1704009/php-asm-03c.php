@@ -6,11 +6,13 @@
 </head>
 <body>
 	<?php
+		$tugoc = " ";
+		$caugoc = " ";
 		$cauthay = " ";
 		 $tuthay= " ";
 		if(isset($_POST['tuthay'])){
-		$caugoc = 'Tôi Yêu Việt Nam';
-		$tugoc = ['Tôi'];
+		$caugoc = $_POST['caugoc'];
+		$tugoc = $_POST['tugoc'];
 		$tuthay   = $_POST['tuthay'];
 		$cauthay = str_replace($tugoc, $tuthay, $caugoc);
 		}
@@ -23,13 +25,13 @@
 			<tr>
 				<td width="111"><strong>Câu Gốc </strong></td>
 				<td width="379">
-				<input name="caugoc" type="text"  value="Tôi Yêu Việt Nam" >
+				<input name="caugoc" type="text"  value="<?php echo $caugoc ?>" >
 				</td>
 			</tr>
 			<tr>
 				<td><strong>Từ gốc</strong></td>
 				<td width="379">
-				<input name="tugoc" type="text"  value="Tôi " >
+				<input name="tugoc" type="text"  value="<?php echo $tugoc ?>" >
 				</td>
 			</tr>
 			<tr>
