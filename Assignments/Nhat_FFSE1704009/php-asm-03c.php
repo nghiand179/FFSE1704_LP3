@@ -48,7 +48,7 @@
 			</tr>
 			<tr>
 				<td colspan="2" align="center"><label>
-				<input type="submit" name="post" value="IN">
+				<input type="submit" name="post" value="Thực Hiện">
 				</label></td>
 			</tr>
 		</table>

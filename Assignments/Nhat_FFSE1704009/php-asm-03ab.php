@@ -52,7 +52,7 @@
 
 		}
 	?>
-	<form id="form1" name="form1" method="post" action="">
+	<form method="post" action="">
 		<table width="500" border="0" align="center" bordercolor="#FFFF99" bgcolor="#FFFF99">
 			<tr>
 				<td colspan="2" align="center" bgcolor="#FF9900"><h1 class="style1">Diện Tích Hình Tròn </h1></td>
@@ -60,7 +60,7 @@
 			<tr>
 				<td width="111"><strong>Bán Kính </strong></td>
 				<td width="379"><label>
-				<input name="ban_kinh" type="text" id="ban_kinh" value="<?php echo $ban_kinh;?>" />
+				<input name="ban_kinh" type="text"  value="<?php echo $ban_kinh;?>" />
 				</label></td>
 			</tr>
 			<tr>
