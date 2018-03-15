@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>review PHP Week 1</title>
+	<title></title>
 </head>
 <body>
-	<?php
-		$a = 11;
+<?php
+		$a = 10;
 		$tong = 0;
 		echo "Danh sách các ước số của a là: <br>";
 		for ($uc=1; $uc<=$a; $uc++) { 
@@ -22,6 +21,5 @@
 		echo " số $a là số nguyên tố ";
 	}
 	?>
-	
 </body>
 </html>
