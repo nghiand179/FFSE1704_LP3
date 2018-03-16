@@ -6,16 +6,16 @@
 </head>
 <body>
 	<?php
-		session_start();
-		foreach ($_SESSION['giohoa'] as $hoa){
-			 $tenhoa=$_POST['tenhoa'];
-			 $dongia=$_POST['dongia'];
-			 $soluong=$_POST['soluong'];
+			session_start();
+			 $_SESSION['tenhoa'] = $_POST['tenhoa'];
+			 $_SESSION['dongia'] = $_POST['dongia'];
+			 $_SESSION['soluong'] = $_POST['soluong'];
+			
 
 			$tong= 0;
 			$tong =($_POST['soluong']*$_POST['dongia']);
 			
-		}
+		
 	?>
 	<form method="post" action="">
 		<table width="500" border="0" align="center" bordercolor="#FFFF99" bgcolor="#FFFF99">
@@ -24,9 +24,9 @@
 			</tr>
 			<tr>
 				
-				<td><strong>Tên Hoa:<br> <?php echo $tenhoa ?></strong></td>
-				<td><strong>Số lượng:<br><?php echo $soluong;?></strong></td>
-				<td><strong>Đơn Giá:<br> <?php echo $dongia;?></strong></td>
+				<td><strong>Tên Hoa:<br> <?php echo $_SESSION['tenhoa']; ?></strong></td>
+				<td><strong>Số lượng:<br><?php echo $_SESSION['soluong'];?></strong></td>
+				<td><strong>Đơn Giá:<br> <?php echo $_SESSION['dongia'];?></strong></td>
 				<td><strong>Tổng:<br> <?php echo $tong;?> </strong></td>
 			</tr>
 			

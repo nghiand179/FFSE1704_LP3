@@ -10,14 +10,14 @@
 		$tenhoa= "";
 		$soluong= "";
 		$dongia= "";
-		session_start();
+	
 		if (isset($_POST['id'])||isset($_POST['tenhoa'])||isset($_POST['soluong'])||isset($_POST['dongia'])) {
-			$hoa['id'] = $_POST['id'];
-			$hoa['tenhoa'] = $_POST['tenhoa'];
-			$hoa['soluong'] = $_POST['soluong'];
-			$hoa['dongia'] = $_POST['dongia'];
+			$id = $_POST['id'];
+			$tenhoa = $_POST['tenhoa'];
+			$soluong = $_POST['soluong'];
+			$dongia = $_POST['dongia'];
 
-			$_SESSION['giohoa'][$_POST['id']]= $hoa;
+			
 		}
 	?>
 	<form method="post" action="php-asm-03giohang.php">
