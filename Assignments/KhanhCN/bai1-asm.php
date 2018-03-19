@@ -4,7 +4,8 @@ $TONG = 0 ;
 echo "Tổng của số nguyên $a";
 while ( $a>0) {
 	$TONG += $a%10 ; 
-	$a = $a/10;	
+	$a = $a/10;
+		
 
 }
 echo " là : ".$TONG."-------Hoặc----------";
