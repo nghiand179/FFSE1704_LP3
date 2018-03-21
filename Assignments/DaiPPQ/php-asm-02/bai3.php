@@ -129,5 +129,5 @@
 			$ten = $FFSE1701[$i]['name'];
 		}
 	}
-	echo "Người có điểm trung bình cao nhất là: " .$ten ." với số điểm là: ".$max;
+	echo "Người có điểm trung bình cao nhất là : ".$ten ." với số điểm là: ".$max;
 ?>
